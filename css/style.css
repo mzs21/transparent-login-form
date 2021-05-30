@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Source+Sans+Pro&display=swap");
+.full-screen-login-container {
+  background: url(../src/max-bender-Rge7khBAQ-Q-unsplash.jpg) center/cover;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: grid;
+  background-color: rgba(109, 110, 83, 0.6);
+  padding: 50px 30px;
+  min-width: 400px;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 40px;
+}
+
+.login-title {
+  color: white;
+  text-align: center;
+  margin: 0 0 40px 0;
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: auto;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  font-size: 1.4em;
+  font-weight: lighter;
+  padding: .1em .25em;
+  background-color: transparent;
+  border: 1px solid yellowgreen;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.input-group input:focus {
+  border: 1px solid rgba(0, 10, 0, 0.692);
+}
+
+.login-button {
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(0, 255, 43, 0.1);
+  border: 1px solid rgba(136, 155, 54, 0.808);
+  outline: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: rgba(67, 204, 25, 0.1);
+}
+
+.login-button:focus {
+  background-color: rgba(53, 165, 18, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+  margin: 0;
+}

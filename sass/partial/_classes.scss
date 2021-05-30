@@ -1,0 +1,76 @@
+@import "variables";
+@import "mixins";
+
+
+.full-screen-login-container {
+    background: url(../src/max-bender-Rge7khBAQ-Q-unsplash.jpg) center/cover ;
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: grid;
+    background-color: $loginContainerColor;
+    padding: 50px 30px;
+    min-width: 400px;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 40px;
+}
+
+.login-title {
+    color: white;
+    text-align: center;
+    margin: 0 0 40px 0;
+    @include font-size-weight(2.5em, normal);
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: 10px;
+
+    label {
+        color: white;
+        margin-bottom: 8px;
+    }
+
+    input {
+        @include font-size-weight(1.4em, lighter);
+        padding: .1em .25em;
+        background-color: transparent;
+        border: 1px solid yellowgreen;
+        outline: none;
+        border-radius: 5px;
+        color: white;
+
+            &:focus {
+                border: 1px solid $inputFocusColor;
+            }
+    }
+}
+
+.login-button {
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 5px; 
+    background-color: $loginButtonBackgroundColor;
+    border: 1px solid $loginButtonBorder;
+    outline: none;
+    color: white;
+    @include font-size-weight(1.5em, lighter);
+    margin-top: 20px;
+    cursor: pointer;
+
+        &:hover {
+            background-color: $loginButtonHoverColor;
+        }
+
+        &:focus {
+            background-color: $loginButtonFocusColor;
+        }
+}

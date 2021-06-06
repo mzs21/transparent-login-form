@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Source+Sans+Pro&display=swap");
 .full-screen-login-container {
   background: url(../src/max-bender-Rge7khBAQ-Q-unsplash.jpg) center/cover;
+  display: grid;
+  grid-template: repeat(12, 1fr);
   height: 100vh;
   width: 100vw;
-  display: grid;
   justify-content: center;
   align-items: center;
 }
 
 .login-container {
   display: grid;
+  grid-column: 4/ -4;
   background-color: rgba(109, 110, 83, 0.6);
-  padding: 50px 30px;
+  padding: 60px 30px;
   min-width: 400px;
   width: 50%;
   max-width: 600px;
@@ -28,7 +30,6 @@
 
 .input-group {
   display: grid;
-  grid-template-columns: auto;
   margin-bottom: 10px;
 }
 

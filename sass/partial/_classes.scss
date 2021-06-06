@@ -4,21 +4,29 @@
 
 .full-screen-login-container {
     background: url(../src/max-bender-Rge7khBAQ-Q-unsplash.jpg) center/cover ;
+    
+    display: grid;
+    grid-template: repeat(12, 1fr);
+    
     height: 100vh;
     width: 100vw;
-
-    display: grid;
+    
     justify-content: center;
     align-items: center;
 }
 
 .login-container {
     display: grid;
+    grid-column: 4/ -4;
+
     background-color: $loginContainerColor;
-    padding: 50px 30px;
+
+    padding: 60px 30px;
+    
     min-width: 400px;
     width: 50%;
     max-width: 600px;
+
     border-radius: 40px;
 }
 
@@ -31,7 +39,6 @@
 
 .input-group {
     display: grid;
-    grid-template-columns: auto;
     margin-bottom: 10px;
 
     label {
@@ -65,7 +72,7 @@
     @include font-size-weight(1.5em, lighter);
     margin-top: 20px;
     cursor: pointer;
-
+    
         &:hover {
             background-color: $loginButtonHoverColor;
         }

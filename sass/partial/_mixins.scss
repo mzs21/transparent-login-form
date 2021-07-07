@@ -1,5 +1,3 @@
-@import "variables";
-
 @mixin font-size-weight($fontSize, $fontWeight){
     font-size: $fontSize;
     font-weight: $fontWeight;

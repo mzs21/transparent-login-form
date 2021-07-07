@@ -9,26 +9,3 @@
 html, body {
     margin: 0;
 }
-
-
-.full-screen-login-container{ 
-    @extend .full-screen-login-container;
-}
-
-
-.login-container {
-    @extend .login-container;
-}
-
-.login-title {
-    @extend .login-title;
-}
-
-.input-group {
-    @extend .input-group;
-}
-
-
-.login-button {
-    @extend .login-button;
-}
